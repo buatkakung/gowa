@@ -59,6 +59,7 @@ const client = new Client({
   restartOnAuthFail: true,
   puppeteer: {
     headless: true,
+	ignoreDefaultArgs: ['--disable-extensions'],
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
