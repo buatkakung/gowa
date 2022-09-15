@@ -1,3 +1,5 @@
+heroku ps:scale web=1
+web:gunicorn
 node_modules
 whatsapp-session*.json
 package-lock.json

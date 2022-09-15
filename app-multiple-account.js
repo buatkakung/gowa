@@ -68,6 +68,7 @@ const createSession = function(id, description) {
   console.log('Creating session: ' + id);
   const client = new Client({
     restartOnAuthFail: true,
+	ignoreDefaultArgs: ['--disable-extensions'],
     puppeteer: {
       headless: true,
       args: [
